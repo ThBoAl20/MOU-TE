@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fuente descargable mediante Google Play Services, indicada por fontProviderQuery.
+     Usa los certificados públicos de font_certs; no incluye un archivo tipográfico local. -->
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:fontProviderAuthority="com.google.android.gms.fonts"
+        app:fontProviderPackage="com.google.android.gms"
+        app:fontProviderQuery="name=Exo&amp;weight=100"
+        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
+</font-family>

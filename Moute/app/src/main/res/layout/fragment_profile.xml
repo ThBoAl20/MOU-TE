@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ficha de ProfileFragment: datos personales, imagen y cierre de sesión.
+     El campo heredado de contraseña no representa una contraseña recuperable de Firebase Auth. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_pressed"
+    android:orientation="vertical"
+    tools:context=".ui.ProfileFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="161dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUserPerfil"
+                    android:layout_width="155dp"
+                    android:layout_height="142dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="@dimen/mr_controller_volume_group_list_padding_top"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtNameUserProfile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:hint="Nombre y apellidos"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="#000000"
+                    app:startIconDrawable="@drawable/ic_account_box"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_profile_name"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtPhoneUserProfile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    android:hint="Teléfono"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:hintTextColor="@color/colorDark"
+                    app:startIconDrawable="@drawable/ic_local_phone_"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_local_phone_"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColorHint="#FFFFFF" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtEmailUserProfile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="@color/colorDark"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_send_black_"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Email"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtFechaNacUserProfile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterOverflowTextColor="@color/quantum_googredA700"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="@color/colorDark"
+                    app:startIconDrawable="@drawable/ic_date_range_"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_date_range_"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Fecha de nacimineto"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtDniUserProfile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterOverflowTextColor="@color/quantum_googredA700"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="@color/colorDark"
+                    app:startIconDrawable="@drawable/ic_subtitles_black_"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="DNI"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtGeneroUserProfile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterOverflowTextColor="@color/quantum_googredA700"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="@color/colorDark"
+                    app:startIconDrawable="@drawable/ic_people"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Género"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtPassUserProfile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Contraseña"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterOverflowTextColor="@color/quantum_googredA700"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="@color/colorDark"
+                    app:startIconDrawable="@drawable/ic_lock_black_"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_lock_black_"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnUpdateUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/buton_logout"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Cerrar sesión"
+                        android:textAllCaps="false"
+                        android:textColor="#FD0000"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

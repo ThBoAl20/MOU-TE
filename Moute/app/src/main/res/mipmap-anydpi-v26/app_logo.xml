@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icono adaptativo para Android 8.0/API 26 y posteriores: combina fondo y primer plano.
+     Android aplica su propia máscara; las variantes redondas comparten los recursos gráficos. -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/app_logo_background"/>
+    <foreground android:drawable="@mipmap/app_logo_foreground"/>
+</adaptive-icon>

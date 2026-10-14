@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fondo de interfaz @drawable/layout_drawable.
+     Sus elementos (corners,solid,padding) definen la apariencia; la interacción la implementa la vista que lo usa. -->
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="24dp"/>
+    <solid android:color="#FFFFFF"/>
+    <padding android:bottom="12dp"
+        android:left="12sp"
+        android:right="12dp"
+        android:top="12dp"/>
+</shape>

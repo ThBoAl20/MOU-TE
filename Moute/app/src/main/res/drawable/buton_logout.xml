@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fondo de interfaz @drawable/buton_logout.
+     Sus elementos (solid,padding,stroke) definen la apariencia; la interacción la implementa la vista que lo usa. -->
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffff"></solid>
+    <padding android:left="25sp"></padding>
+    <stroke android:color="#FF898686" android:width="1dp"/>
+
+</shape>

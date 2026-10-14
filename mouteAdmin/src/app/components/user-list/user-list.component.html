@@ -1,0 +1,23 @@
+<!-- Cada fila corresponde a Usuarios/{uid}/Datos. El botón abre la ficha por UID. -->
+<div class="card">
+  <div class="card-header">
+    <h6 class="text-center">Lista de Usuarios</h6>
+  </div>
+  <div class="card-body">
+    <table class="table table-sm table-hover">
+      <tbody>
+      <!-- usersList se reconstruye en el componente a partir del snapshot remoto. -->
+      <tr *ngFor="let usuario of usersList" class="">
+        <td>Identificador: <br/>{{usuario.id}}</td>
+        <td> Nombre completo:<br/> {{usuario.nombre}}<br/>{{usuario.apellido}}</td>
+        <td>Correo :<br/>{{usuario.correo}} </td>
+        <td>
+          <a type="button" class="btn btn-outline-primary" (click)="enviarDatos(usuario.id)">Ver usuario</a>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+

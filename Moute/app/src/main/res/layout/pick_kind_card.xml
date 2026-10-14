@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Selector visual heredado entre Contrato y Prepago; el formulario activo está en fragment_type_of_card. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Elige el tipo de tarjeta"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/chContrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Contrato"
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/chPrepago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Prepago"
+        android:textColor="#000000" />
+
+</LinearLayout>

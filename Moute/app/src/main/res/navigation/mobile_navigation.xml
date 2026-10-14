@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mapa de destinos de Android Navigation con nav_home como inicio.
+     Java navega mediante estos IDs y pasa modelos Parcelable en Bundle; no hay Safe Args.
+     Los atributos tools son ayudas del editor, no controles de acceso ni parámetros en ejecución. -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.manuel.moute.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tarjetas"
+        android:name="com.manuel.moute.ui.MisTarjetas.MisTarjetasFragment"
+        android:label="Mis tarjetas"
+        tools:layout="@layout/fragment_mis_tarjetas" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.manuel.moute.ui.ProfileFragment"
+        android:label="Mi perfil"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/contratarFragment"
+        android:name="com.manuel.moute.ui.ContratarFragment"
+        android:label=" Contratacion de tarjetas"
+        tools:layout="@layout/fragment_contratar" />
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.manuel.moute.ui.Register.RegisterFragment"
+        android:label="Registrate"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.manuel.moute.ui.LoginFragment"
+        android:label="Iniciar Sesión"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/nav_tipoCard"
+        android:name="com.manuel.moute.ui.TypeOfCardFragment"
+        android:label="Personaliza tu tarjeta"
+        tools:layout="@layout/fragment_type_of_card" />
+    <fragment
+        android:id="@+id/nav_ver_tarjeta"
+        android:name="com.manuel.moute.ui.VerTarjetaFragment"
+        android:label="Ver tarjeta"
+        tools:layout="@layout/fragment_ver_tarjeta" />
+    <fragment
+        android:id="@+id/nav_forgotPass"
+        android:name="com.manuel.moute.ui.ForgotPasswordFragment"
+        android:label="Recuperar contraseña"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/nav_register3"
+        android:name="com.manuel.moute.ui.Register.Register3Fragment"
+        android:label="Registrate"
+        tools:layout="@layout/fragment_register2" />
+    <fragment
+        android:id="@+id/nav_register2"
+        android:name="com.manuel.moute.ui.Register.Register2Fragment"
+        android:label="Registrate" />
+    <fragment
+        android:id="@+id/phoneVerificationFragment"
+        android:name="com.manuel.moute.ui.PhoneVerificationFragment"
+        android:label="Verificacion de email"
+        tools:layout="@layout/fragment_phone_verification" />
+    <fragment
+        android:id="@+id/nav_conocenos"
+        android:name="com.manuel.moute.ui.ConocenosFragment"
+        android:label="Conócenos"
+        tools:layout="@layout/fragment_conocenos" />
+    <fragment
+        android:id="@+id/nav_acercaDenosotros"
+        android:name="com.manuel.moute.ui.AcercaDeNosotrosFragment"
+        android:label="Acerca de nosotros"
+        tools:layout="@layout/fragment_acerca_de_nosotros" />
+    <fragment
+        android:id="@+id/nav_configuration"
+        android:name="com.manuel.moute.ui.ConfigurationFragment"
+        android:label="Configuracion"
+        tools:layout="@layout/fragment_configuration" />
+    <fragment
+        android:id="@+id/nav_deleteAcoutn"
+        android:name="com.manuel.moute.ui.DeleteAccountFragment"
+        android:label="Eliminar cuenta"
+        tools:layout="@layout/fragment_delete_account" />
+
+</navigation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aspecto de cada opción del selector en TypeOfCardFragment.
+     La lista de productos y la lógica de selección están en el fragmento. -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:fontFamily="sans-serif-light"
+    android:padding="10dp"
+
+    android:textColor="#000000"
+    android:textSize="18sp" />

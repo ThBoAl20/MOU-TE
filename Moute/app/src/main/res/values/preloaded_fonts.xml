@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fuentes descargables que Android puede precargar, referenciadas desde el manifiesto. -->
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/aldrich</item>
+        <item>@font/exo_thin</item>
+        <item>@font/julius_sans_one</item>
+    </array>
+</resources>

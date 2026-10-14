@@ -1,0 +1,21 @@
+# CI heredada de angular-seed: ejecuta pruebas de la plantilla web, no del APK.
+# No representa una configuración de integración continua validada para Moute.
+dist: trusty
+
+language: node_js
+node_js:
+  - 10
+
+addons:
+  chrome: stable
+
+cache:
+  directories:
+    - "$HOME/.npm"
+
+install:
+  - npm install
+
+script:
+  - npm run test-single-run -- --browsers ChromeHeadless
+  - (npm start > /dev/null &) && npm run protractor -- --capabilities.chromeOptions.args headless

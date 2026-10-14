@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Opciones del menú lateral. Los IDs enlazan con los destinos de mobile_navigation;
+     MainActivity ajusta su visibilidad según sesión, manteniendo contratación y tarjetas para invitados. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_widgets"
+
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_tarjetas"
+            android:icon="@drawable/tarjeta"
+            android:title="Mis tarjetas"
+            android:iconTint="@color/colorDark"
+            />
+
+        <item
+            android:id="@+id/contratarFragment"
+            android:icon="@drawable/addcard2"
+            android:title="Contratar tarjeta" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Usuario">
+            <menu>
+                <item
+                    android:id="@+id/profileFragment"
+                    android:icon="@drawable/ic_account"
+                    android:title="Mi perfil"
+                    android:iconTint="@color/colorDark"/>
+
+                <item
+                    android:id="@+id/nav_configuration"
+                    android:icon="@drawable/ajustes1"
+                    android:title="Configuracion"
+                    android:iconTint="@color/colorDark"/>
+                <item
+                android:id="@+id/nav_register"
+                android:icon="@drawable/ic_person_add"
+                android:title="Registrate"/>
+                <item
+                    android:id="@+id/loginFragment"
+                    android:icon="@drawable/acceder"
+                    android:title="Iniciar sesión" />
+
+                <item
+                    android:id="@+id/nav_logOut"
+                    android:checkable="true"
+                    android:icon="@drawable/salir2"
+                    android:title="Cerrar sesión" />
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item android:title="Información">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_acercaDenosotros"
+                    android:checkable="true"
+                    android:icon="@drawable/acercadenostros"
+                    android:title="Acerca de nosotros"
+                    android:iconTint="@color/colorDark"></item>
+
+                <item
+                    android:id="@+id/nav_conocenos"
+                    android:checkable="true"
+                    android:icon="@drawable/ayuda"
+                    android:title="Ayuda"
+                    android:iconTint="@color/colorDark">
+
+                </item>
+
+            </menu>
+        </item>
+    </group>
+
+</menu>

@@ -1,0 +1,11 @@
+<!-- Variante del tema para Android 5.0/API 21 y posteriores.
+     Complementa values/styles.xml para las ventanas sin barra de acción. -->
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>

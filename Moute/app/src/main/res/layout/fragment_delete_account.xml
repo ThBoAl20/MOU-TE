@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Confirmación de DeleteAccountFragment mediante contraseña y reautenticación.
+     La eliminación de Auth y los datos del perfil son operaciones remotas distintas. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackgroud"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".ui.DeleteAccountFragment">
+
+    <ImageView
+        android:id="@+id/img_logo_login"
+        android:layout_width="119dp"
+        android:layout_height="107dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        android:src="@drawable/applogo2"
+        android:transitionName="logo_img" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="382dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="¿Desea eliminar la cuenta?"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/deletAccount"
+        android:textColor="#000000"
+        android:textStyle="normal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEmailDelete"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        app:boxStrokeColor="@color/colorDark"
+        app:boxStrokeWidthFocused="2dp"
+        app:counterOverflowTextColor="@color/quantum_googredA700"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorDark"
+        app:hintTextColor="@color/colorDark"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/colorDark">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:transitionName="email_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPasswordDelete"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        app:boxStrokeColor="@color/colorDark"
+        app:boxStrokeWidthFocused="2dp"
+        app:counterOverflowTextColor="@color/quantum_googredA700"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorDark"
+        app:hintTextColor="@color/colorDark"
+        app:startIconDrawable="@drawable/ic_lock_black_"
+        app:startIconTint="@color/colorDark">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:transitionName="pass_text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:fontFamily="sans-serif-light"
+        android:text="Eliminar"
+        android:textColor="#FBFBFB"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

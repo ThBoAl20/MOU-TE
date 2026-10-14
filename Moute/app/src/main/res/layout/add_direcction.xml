@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Formulario modal de dirección de envío usado por VerTarjetaFragment.
+     Guarda direccionDeEnvio en Firebase; no integra un transportista ni tramita un envío real. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addDirLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aler_dialog"
+    android:orientation="vertical"
+    tools:context=".ui.ProfileFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/text_dialog"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="Dirección de envio"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgAddDir"
+                        android:layout_width="103dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="40dp"
+                            android:text="Hola"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/lblNombreUserDir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Nombre"
+                            android:textColor="#000000"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="@dimen/mr_controller_volume_group_list_padding_top"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Rellena los datos de la dirección a enviar"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtCalleDir"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="7dp"
+                    android:hint="Ejem. Avenida/Calle/Carretera, 13, 4"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="#000000"
+
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInfoDir"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    android:hint="Información adicional"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:hintTextColor="@color/colorDark"
+
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColorHint="#FFFFFF" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtProvinciaDir"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterOverflowTextColor="@color/quantum_googredA700"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="@color/colorDark"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Provincia"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtCpDir"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterOverflowTextColor="@color/quantum_googredA700"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="@color/colorDark"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Código Postal"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtCiudadDir"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Ciudad"
+                    app:boxStrokeColor="@color/colorDark"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:counterOverflowTextColor="@color/quantum_googredA700"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/colorDark"
+                    app:errorTextColor="#FF0000"
+                    app:hintTextColor="@color/colorDark"
+                    app:startIconTint="@color/colorDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColorHint="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnAddDir"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/backgroud_star_rating"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="10dp"
+                    android:text="solicitar tarjeta"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

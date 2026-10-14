@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fondo de interfaz @drawable/edit_tex.
+     Sus elementos (solid,corners,padding,stroke) definen la apariencia; la interacción la implementa la vista que lo usa. -->
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/colorLigth"></solid>
+    <corners android:radius="50sp"/>
+    <padding android:left="25sp"></padding>
+    <stroke android:color="#000000" android:width="1dp"/>
+
+
+</shape>

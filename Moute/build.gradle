@@ -1,0 +1,31 @@
+// Herramientas de compilación comunes de Android, no dependencias de la plantilla AngularJS.
+// Las versiones antiguas de Gradle/AGP se mantienen: una migración requiere otra revisión.
+
+buildscript {
+    
+    repositories {
+        // Google aloja los artefactos Android; Maven Central, las bibliotecas restantes.
+        google()
+        mavenCentral()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.2'
+        classpath 'com.google.gms:google-services:4.2.0'
+
+
+        // Las dependencias que se incluyen en el APK se declaran en app/build.gradle.
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

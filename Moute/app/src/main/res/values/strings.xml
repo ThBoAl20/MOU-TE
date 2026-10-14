@@ -1,0 +1,159 @@
+<!-- Textos y listas de opciones de la interfaz. Incluye descripciones y condiciones de la demo;
+     los importes y las reglas de contratación también aparecen en TypeOfCardFragment. -->
+<resources>
+
+    <string name="app_name">Moute</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="Tipo">
+        <item>Prepago</item>
+        <item>Contrato</item>
+    </string-array>
+
+    <string-array name="Cantidad">
+        <item>Elige el tiempo de tarjeta</item>
+        <item>10 viajes</item>
+        <item>20 viajes</item>
+        <item>40 viajes</item>
+    </string-array>
+
+    <string-array name="Tiempo">
+        <item>Elige el tiempo de tarjeta</item>
+        <item> 7 días</item>
+        <item> 14 días</item>
+        <item>30 días</item>
+    </string-array>
+
+    <string-array name="Titulo">
+        <item>Bus</item>
+        <item>Metro</item>
+        <item>Tren de cercanías</item>
+        <item>Bus y Metro</item>
+        <item>Abono completp (Bus, Metro, Tren de cercanias</item>
+    </string-array>
+
+    <string name="delete_card_info"> Si elimina la tarjete no podra recuperarla, Para una tarjeta del mismo título contrate otra tarjeta</string>
+    <!-- Aviso académico: no reutilizar la política de una empresa ajena como si fuera de Moute. -->
+    <string name="politica_privaicidad">Moute es una demostración académica y no un servicio oficial de transporte. Usa únicamente datos ficticios. Las tarjetas de invitado se guardan en el dispositivo y no implican ningún cobro. Los flujos con cuenta utilizan el proyecto Firebase que configure quien ejecuta la app. Este aviso no es una política de privacidad validada para un servicio real; antes de usar datos personales se debe definir e implementar una política adecuada.</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="code_text">cod\nigo</string>
+    <string name="title_text">Crear <br>cuenta</br></string>
+    <string name="description_code">Introduce el código que has recibido por sms</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- String para las tarjetas-->
+    <string name="descripcionBO">
+        Para mayores de 65 años, pensionistas y discapacitados que cumplan las
+        condiciones descritas en Normativa Vigente, y estén empadronados en la ciudad
+        como mínimo desde los 6 meses anteriores a la solicitud y residan legalmente en España.
+    </string>
+    <string name="tituloBO">
+        BONO ORO
+    </string>
+    <string name="validesBO">
+        Solo Bús interurbano
+    </string>
+
+
+    <string name="descripcionABT">
+        Títulos temporales, sin límite de viajes dentro de los 30 días desde la fecha de validación
+        <br />
+        Uso en el autobús y metro: Enseñar y validar
+        Personal e intransferible.
+    </string>
+    <string name="precioABT">
+        Precio\
+        ZonaA: 45€\
+        ZonaAB: 58,30€\
+        ZonaABC: 68,70€\
+        ZonaABCD: 79,10€
+    </string>
+    <string name="tituloABT">
+        Abono Transporte
+    </string>
+    <string name="validesABT">
+        Bús y Metro
+    </string>
+
+    <string name="descripcionJove">
+        Abono mensual para menores de 30 años<br />
+    Título temporal, sin límite de viajes en la red de autobuses interurbanos Valencia, dentro de los 30 días siguientes desde la fecha de validación.
+    </string>
+    <string name="tituloJove">
+        Moute jove
+    </string>
+    <string name="validesJove">
+        Solo Bús interurbano
+    </string>
+    <string name="informacion">
+        Son perosonales e intransferibles.\
+        Una vez solicitada la física se deshabilita la virtual"
+
+    </string>
+
+    <string name="AcercaDe">
+        TÉRMINOS, CONDICIONES DE USO, Y POLÍTICA DE PRIVACIDAD DE LAS APLICACIÓN DE MOUTE (TRANSPORTE).
+    </string>
+
+    <string name="AcercaDe1">
+    LEA DETENIDAMENTE LAS PRESENTES CONDICIONES DE USO ANTES DE UTILIZAR CUALQUIER SOFTWARE DE
+        MOUTE EN CUALQUIERA DE SUS VERSIONES Y PLATAFORMAS.
+    </string>
+    <string name="AcercaDe2">
+    La simple utilización  de las aplicaciones se interpretará automáticamente como un hecho inequívoco de que acepta los términos y condiciones de uso recogidos en el documento. Si no acepta las condiciones, simplemente no haga uso de la aplicación y desinstálela. Aspectos básicos del uso, según se desarrollará más adelante:
+    ·  a. Las aplicaciones se han concebido y desarrollado por la Empresa Municipal de Transportes de Madrid, S.A. (en adelante EMTMADRID) con la finalidad de ofrecer contenido informativo acerca de su oferta de servicio y sin ninguna finalidad comercial.
+    ·  b. Las aplicaciones son procesos de software que, circunstancialmente y durante su utilización, pueden tener errores, lo cual Usted conoce y acepta.
+    ·  c. EMTMADRID en el caso de que necesite recolectar datos, lo realizará siempre con fines de mejora del servicio que presta o de la movilidad de la ciudad y para potenciar una movilidad sostenible y siempre bajo el consentimiento del usuario y de forma anónima. En el caso de que EMTMADRID requiera datos no anónimos, lo realizará previa aceptación de usted y siempre bajo el mismo prisma de estricta confidencialidad y con el fin de promover la mejora en la prestación de servicios de movilidad sostenible.
+    </string>
+    <string name="AcercaDe3">
+        1.   DESCRIPCIÓN DE LAS APLICACIONES.
+    </string>
+    <string name="AcercaDe4">
+        MOUTE dispone de un conjunto de aplicaciones móviles cuya finalidad es proporcionar información de transporte público de autobús, servicio de bicicleta de alquiler e información
+        de aparcamientos públicos, entre otros. Los contenidos de las aplicaciones, así como las posibles notificaciones que puedan emitirse o visualizarse a través de la aplicación, sólo serán
+        generados por MOUTE. MOUTE no cederá datos personales o individualizados de usuarios a terceras partes con ninguna finalidad, teniendo el compromiso de almacenar y custodiar los datos del usuario
+        para los fines exclusivos de análisis de movilidad anteriormente descritos.
+    </string>
+    <string name="AcercaDe5">
+        2.   DERECHO DE USO.
+    </string>
+    <string name="AcercaDe6">
+        En el caso de que usted acepte unilateralmente los términos y condiciones recogidos en el presente documento, MOUTE le autoriza a utilizar, únicamente bajo estos términos, las aplicaciones de MOUTE.
+    </string>
+    <string name="AcercaDe7">
+       3.   LIMITACIONES.
+    </string>
+    <string name="AcercaDe8">
+      Al aceptar los términos y condiciones de uso para usar las Aplicaciones, Usted se compromete a NO copiar, descompilar, desensamblar o intentar acceder u obtener el código fuente de la Aplicación, total o parcialmente, ni permitir a otras personas con acceso a la misma que lo hagan. MOUTE es el titular exclusivo de los derechos de propiedad intelectual sobre el código fuente de las aplicaciones de MOUTE, aunque puede utilizar, dentro de sus aplicativos, fuentes de información ajenas a MOUTE con el fin de proporcionar servicios o datos combinados. Cualquier reproducción, distribución, publicación o transformación de la aplicación sin consentimiento de MOUTE será considerada una infracción de los derechos de MOUTE. Del mismo modo, el acceso, descompilación (mediante cualquier técnica, incluyendo ingeniería inversa) u obtención del código fuente de la Aplicación, se considerará un incumplimiento de las condiciones marcadas en este documento. En tales casos, MOUTE se reserva la facultad de realizar cuantas acciones considere necesarias para defender sus legítimos derechos.
+    </string>
+    <string name="AcercaDe9">
+        4.   TRANSMISIÓN.
+    </string>
+    <string name="AcercaDe10">
+        Usted no podrá alquilar, arrendar, prestar, poner a disposición o distribuir las aplicaciones de MOUTE.
+    </string>
+    <string name="privacidadLink"><u>Leer politica de privacidad y condiciones de uso</u></string>
+
+
+    <string name="logout">Si mantienes tu sesión iniciada, podrás contratar tarjeta y gestionar tus tarjetas más rapido</string>
+    <string name="deletAccount">Al eliminar la cuenta tus datos serán completamente eliminado del sistema. No podrás recuperarlos y no tendras acceso a las funciones de la aplicación</string>
+    
+    
+    <string name="stTrasborbo">
+
+    </string>
+
+</resources>

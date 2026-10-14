@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "Usuarios": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || auth.token.admin === true)",
+        "Datos": {
+          ".write": "auth != null && (auth.uid === $uid || auth.token.admin === true)",
+          ".validate": "newData.hasChildren(['nombre', 'apellido', 'correo']) && !newData.hasChild('contraseña')"
+        },
+        "listaTarjetas": {
+          ".write": "auth != null && auth.token.admin === true"
+        }
+      }
+    }
+  }
+}

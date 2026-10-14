@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paso 2 de registro: DNI, nacimiento y género.
+     Register2Fragment completa el perfil recibido sin guardarlo todavía en Firebase. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackgroud"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.Register.RegisterFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#00FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTitle2"
+                    android:layout_width="194dp"
+                    android:layout_height="109dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/title_text"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:transitionName="lbl_title_reg2" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bc_calendar"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="2/3"
+                    android:textColor="#000000"
+                    android:textSize="50sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="Elige tu género"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/selecGenere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMan"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hombre" />
+
+                    <RadioButton
+                        android:id="@+id/rbWoman"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mujer" />
+
+                    <RadioButton
+                        android:id="@+id/rbNone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No especificar" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+
+            <View
+                android:layout_width="351dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Elige tu edad"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <DatePicker
+                android:id="@+id/dtFechaNac"
+                android:layout_width="258dp"
+                android:layout_height="162dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:headerBackground="@color/quantum_error_light"
+                android:longClickable="true"
+                android:padding="10dp"
+                android:spinnersShown="true" />
+
+            <Button
+                android:id="@+id/btnNext2"
+                android:layout_width="278dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_white"
+                android:elevation="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Siguiente"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:transitionName="btn_login_reg2" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="348dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/common_google_signin_btn_text_dark_pressed"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center|right"
+                android:paddingRight="10dp"
+                android:text="¿Ya tienes cuenta? Iniciar sesión"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:transitionName="btn_login_reg2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

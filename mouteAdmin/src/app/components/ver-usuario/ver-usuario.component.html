@@ -1,0 +1,67 @@
+<!-- Ficha de lectura: perfil personal a la izquierda y tarjetas remotas a la derecha.
+     Muestra datos personales; su acceso debe quedar restringido en Firebase. -->
+<div>
+  <a [routerLink]="['/']" style="float: left; color: black;">Volver atrás</a>
+  <br/>
+  <h2 class="page-header">informacion personal</h2>
+    <br>
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <ul class="list-group"></ul>
+      <div class="list-form">
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="font-size: 15px; color: black">Identificador: {{id}}</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="font-size: 15px; color: black"> Nombre: {{user.nombre}}</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="font-size: 15px; color: black"> Apellidos: {{user.apellido}}</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="font-size: 15px; color: black">Correo: {{user.correo}}</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="font-size: 15px; color: black">Teléfono: {{user.telefono}}</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="font-size: 15px; color: black">DNI: {{user.dni}}</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="font-size: 15px; color: black">Fecha de Nacimieto: {{user.fechaNac}}</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center" style="font-size: 15px; color: black">Correo: {{user.correo}}</li>
+      </div>
+    </div>
+
+    <!-- listaCard es el mapa listaTarjetas convertido a array por el componente. -->
+    <div class="col-md-8">
+      <ul class="list-group- form" *ngFor="let card of listaCard">
+        <td>
+          <div class="card border-primary mb-2" style="width: 22rem; margin-right: 10px">
+            <div class="card-header text-center" style="font-size: large">{{card.titulo}}</div>
+            <div class="card-body">
+              <ul class="card-title"> {{card.nombre}}</ul>
+              <ul class="card-title">{{card.apellidos}}</ul>
+              <ul class="card-title">{{card.dni}}</ul>
+              <div class="row">
+                <div class="col s6"> MOUTE</div>
+                <div class="col s6" style="float: right" > {{card.numCard}}</div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+            <!-- Fechas y dirección son valores guardados, no un seguimiento de envío. -->
+            <h6> Detalles de la tarjeta</h6>
+          <li class="list-group-item d-flex justify-content-between align-items-center"
+              style="font-size: 15px; color: black">Fecha de contratación: {{card.fechaContrato}}</li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-center"
+              style="font-size: 15px; color: black">Dirección de envio: {{card.direccionDeEnvio}}</li>
+        </td>
+
+      </ul>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+

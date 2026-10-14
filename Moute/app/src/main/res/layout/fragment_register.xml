@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paso 1 de registro: nombre, apellidos, correo y contraseña.
+     RegisterFragment valida los campos; el perfil y la contraseña viajan por argumentos separados. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.Register.RegisterFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTitle1"
+                    android:layout_width="194dp"
+                    android:layout_height="109dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/title_text"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:transitionName="logo_desc" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bc_calendar"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="1/3"
+                    android:textColor="#000000"
+                    android:textSize="50sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtNombreReg"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                app:boxStrokeColor="@color/colorDark"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorDark"
+                app:errorTextColor="#FF0000"
+                app:hintTextColor="@color/colorDark"
+                app:startIconDrawable="@drawable/ic_account_box"
+                app:startIconTint="@color/colorDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Nombre"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtApellidosReg"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                app:boxStrokeColor="@color/colorDark"
+                app:boxStrokeWidthFocused="2dp"
+                app:counterOverflowTextColor="@color/quantum_googredA700"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorDark"
+                app:errorTextColor="#FF0000"
+                app:hintTextColor="@color/colorDark"
+                app:startIconDrawable="@drawable/ic_account_box"
+                app:startIconTint="@color/colorDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Apellidos"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtEmailReg"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                app:boxStrokeColor="@color/colorDark"
+                app:boxStrokeWidthFocused="2dp"
+                app:counterOverflowTextColor="@color/quantum_googredA700"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorDark"
+                app:errorTextColor="#FF0000"
+                app:hintTextColor="@color/colorDark"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/colorDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:transitionName="email_text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtDniReg"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                app:boxStrokeColor="@color/colorDark"
+                app:boxStrokeWidthFocused="2dp"
+                app:counterOverflowTextColor="@color/quantum_googredA700"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorDark"
+                app:errorTextColor="#FF0000"
+                app:hintTextColor="@color/colorDark"
+                app:startIconDrawable="@drawable/ic_subtitles_black_"
+                app:startIconTint="@color/colorDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="DNI/NIE/PASS"
+                    android:inputType="textPersonName"
+                    android:transitionName="pass_text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtPasswordReg"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                app:boxStrokeColor="@color/colorDark"
+                app:boxStrokeWidthFocused="2dp"
+                app:counterOverflowTextColor="@color/quantum_googredA700"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/colorDark"
+                app:errorTextColor="#FF0000"
+                app:hintTextColor="@color/colorDark"
+                app:startIconDrawable="@drawable/ic_lock_black_"
+                app:startIconTint="@color/colorDark">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnNext1"
+                android:layout_width="231dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:fontFamily="sans-serif-light"
+                android:text="Siguiente"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:transitionName="login_next" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:transitionName="register"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="10dp">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="right"
+                    android:text="¿Ya tienes cuenta?"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:transitionName="slogan_text"/>
+
+                <TextView
+                    android:id="@+id/lblLinkDoLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="right"
+                    android:onClick="callLoginScreen"
+                    android:paddingRight="10dp"
+                    android:text="Inciar sesión"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:transitionName="slogan_text" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/moute" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

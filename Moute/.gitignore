@@ -1,0 +1,19 @@
+# Archivos locales/generados del módulo Android. No limpia lo ya seguido por Git.
+build/
+app/build/
+.gradle*/
+.android*/
+local.properties
+app/google-services.json
+*.iml
+*.apk
+*.aab
+*.keystore
+*.jks
+logs/*
+!.gitkeep
+node_modules/
+app/lib/
+tmp
+.DS_Store
+.idea

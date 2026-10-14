@@ -1,0 +1,9 @@
+# Mantener los scripts portables sin alterar los recursos binarios.
+* text=auto
+Moute/gradlew text eol=lf
+*.bat text eol=crlf
+*.png -text
+*.jpg -text
+*.ico -text
+*.ttf -text
+*.jar -text

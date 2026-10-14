@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenido informativo estático que muestra ConocenosFragment.
+     Los textos no implementan acciones de soporte ni una conexión con un servicio externo. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ConocenosFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bc_calendar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Tarjetas personalizadas"
+                android:textColor="#B2092A"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="309dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/informacion"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:text="@string/informacion">
+
+            </TextView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="103dp"
+                            android:layout_height="79dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/image_ly"
+                            android:padding="20dp"
+                            android:src="@drawable/cardimagen" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="bottom|center|left"
+                            android:padding="5dp"
+                            android:text="BONO BÚS"
+                            android:textColor="#7F7F7F"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/descripcionBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingLeft="10dp"
+                            android:text="@string/validesBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="103dp"
+                            android:layout_height="79dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/image_ly"
+                            android:padding="20dp"
+                            android:src="@drawable/cardimagen" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="68dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="bottom|center|left"
+                            android:padding="5dp"
+                            android:text="BONO TRANSBORDO"
+                            android:textAllCaps="true"
+                            android:textColor="#7F7F7F"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/descripcionBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingLeft="10dp"
+                            android:text="@string/validesABT"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingLeft="@dimen/google_1x"
+                            android:text="@string/precioABT"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="103dp"
+                            android:layout_height="79dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/image_ly"
+                            android:padding="20dp"
+                            android:src="@drawable/cardimagen" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="64dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="bottom|center|left"
+                            android:padding="5dp"
+                            android:text="BONO TRANSBORDO zona AB"
+                            android:textAllCaps="false"
+                            android:textColor="#7F7F7F"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/descripcionBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingLeft="10dp"
+                            android:text="@string/validesBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="103dp"
+                            android:layout_height="79dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/image_ly"
+                            android:padding="20dp"
+                            android:src="@drawable/cardimagen" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="bottom|center|left"
+                            android:padding="5dp"
+                            android:text="VIAJES SIN LIMITE"
+                            android:textColor="#7F7F7F"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/descripcionBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingLeft="10dp"
+                            android:text="@string/validesBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="0.7dp"
+                android:alpha="0.8"
+                android:background="#000000"
+                android:padding="10dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Tarjetas no Personalizadas"
+                android:textColor="#B2092A"
+                android:textSize="24sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="309dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/informacion"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:text="@string/informacion">
+
+            </TextView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="103dp"
+                            android:layout_height="79dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/image_ly"
+                            android:padding="20dp"
+                            android:src="@drawable/cardimagen" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="bottom|center|left"
+                            android:padding="5dp"
+                            android:text="@string/tituloBO"
+                            android:textColor="#7F7F7F"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            tools:text="@string/tituloBO" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/descripcionBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingLeft="10dp"
+                            android:text="@string/validesBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="103dp"
+                            android:layout_height="79dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/image_ly"
+                            android:padding="20dp"
+                            android:src="@drawable/cardimagen" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="68dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="bottom|center|left"
+                            android:padding="5dp"
+                            android:text="@string/tituloABT"
+                            android:textAllCaps="true"
+                            android:textColor="#7F7F7F"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            tools:text="@string/tituloABT" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/descripcionBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingLeft="10dp"
+                            android:text="@string/validesABT"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingLeft="@dimen/google_1x"
+                            android:text="@string/precioABT"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="103dp"
+                            android:layout_height="79dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/image_ly"
+                            android:padding="20dp"
+                            android:src="@drawable/cardimagen" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="bottom|center|left"
+                            android:padding="5dp"
+                            android:text="@string/tituloJove"
+                            android:textColor="#7F7F7F"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            tools:text="@string/tituloJove" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/descripcionBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:paddingLeft="10dp"
+                            android:text="@string/validesBO"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

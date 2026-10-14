@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inicio de HomeFragment: accesos a contratación, tarjetas y demostración de mapas.
+     Contratar y Mis tarjetas también están disponibles en modo invitado. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"></com.google.android.gms.maps.MapView>
+
+        <Button
+            android:id="@+id/btnGoToMap"
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/home2"
+            android:drawableLeft="@drawable/ic_search"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp"
+            android:text="¿A donde quieres ir?"
+            android:textAllCaps="false"
+            android:textSize="18sp"></Button>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lnLayoutCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/home1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Mis tarjetas"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"></TextView>
+
+        <Button
+            android:id="@+id/btnGoMisTarjetas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/home2"
+            android:drawableRight="@drawable/ic_keyboard_r"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="ir a mis tarjetas "
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnLayoutCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/home1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Contratar"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"></TextView>
+
+        <Button
+            android:id="@+id/btnGoContratar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/home2"
+            android:drawableRight="@drawable/ic_keyboard_r"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="ir a contratar tarjeta"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

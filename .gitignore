@@ -1,0 +1,38 @@
+# Dependencias descargadas y archivos generados, no fuentes de Moute.
+**/node_modules/
+**/bower_components/
+Moute/app/lib/
+**/build/
+**/dist/
+**/out-tsc/
+**/coverage/
+**/.gradle*/
+**/.android*/
+**/tmp/
+*.apk
+*.aab
+*.class
+*.log
+
+# Configuración del equipo y credenciales locales (no limpia archivos ya seguidos).
+**/.idea/
+*.iml
+**/local.properties
+**/google-services.json
+mouteAdmin/src/environments/environment.ts
+mouteAdmin/src/environments/environment.prod.ts
+*.keystore
+*.jks
+*.p12
+*.pem
+**/.env
+**/.env.*
+!**/.env.example
+
+# Material original con posible información personal: conservar solo localmente.
+/moute-5404e-export.json
+/Documento TFC.pdf
+
+# Archivos del sistema.
+.DS_Store
+Thumbs.db

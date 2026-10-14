@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paso 3 de registro: teléfono con prefijo de país y aceptación de condiciones.
+     Register3Fragment crea la cuenta y el perfil; este XML no implementa verificación SMS. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackgroud"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.Register.RegisterFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblTitle3"
+            android:layout_width="194dp"
+            android:layout_height="109dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/title_text"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:transitionName="lbl_title_reg2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bc_calendar"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="3/3"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bc_calendar"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="true" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtTelefonoReg3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="7dp"
+            app:boxStrokeColor="@color/colorDark"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorDark"
+            app:hintTextColor="@color/colorDark"
+            app:startIconDrawable="@drawable/ic_local_phone_"
+            app:startIconTint="@color/colorDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
+                android:hint="Teléfono"
+                android:inputType="phone"
+
+                android:textColor="@color/colorDark" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblReadPrivacyPolitic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|left"
+            android:text="@string/privacidadLink"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/chcUseConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="sans-serif-light"
+            android:shadowColor="#000000"
+            android:text="He leído las políticas de privacidad"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:id="@+id/chcUseReadCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-light"
+            android:shadowColor="#000000"
+            android:text="Aceptar los términos y codiciones de uso"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnDoLogin3"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Registrate"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:transitionName="btn_login_reg2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="100dp"
+        android:padding="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:transitionName="register">
+
+        <TextView
+            android:id="@+id/lblTexto2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|right"
+            android:paddingTop="10dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="10dp"
+            android:text="¿Ya tienes cuenta?"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:transitionName="lbl_login_dologin2b" />
+
+
+        <TextView
+            android:id="@+id/lblLinkDoLogin2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center|right"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="Inciar sesión"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:transitionName="lbl_login_dologin2" />
+
+    </LinearLayout>
+
+</LinearLayout>

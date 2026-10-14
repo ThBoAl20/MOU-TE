@@ -1,0 +1,24 @@
+<!-- Vista de prototipo: usersList contiene usuarios con tarjetas, no solicitudes.
+     Las etiquetas de número/tipo son heredadas: los valores enlazados debajo son
+     nombre/apellido/correo del usuario. No representan esos datos de una tarjeta. -->
+<div class="card" >
+  <div class="card-header">
+    <h6 class="text-center">Solicitudes de tajetas fìsicas</h6>
+  </div>
+  <div class="card-body">
+    <table class="table table-sm table-hover">
+      <tbody>
+      <tr *ngFor="let usuario of usersList" class="">
+        <td>ID del usuario: <br/>{{usuario.id}}</td>
+        <td> Número de tarjeta:<br/> {{usuario.nombre}}<br/>{{usuario.apellido}}</td>
+        <td> Tipo de tarjeta<br/>{{usuario.correo}} </td>
+        <td>
+          <!-- Abre la misma ficha de usuario que la lista principal. -->
+          <a type="button" class="btn btn-outline-primary" (click)="enviarDatos(usuario.id)">ver solicitud</a>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
